@@ -106,11 +106,15 @@ export default function ResumeSection({
           </div>
 
           {/* Portfolio statistics */}
-          <dl className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-xl bg-white/10 text-center">
+          <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-white/10 text-center sm:grid-cols-4">
             {[
               {
+                value: '2027',
+                label: 'Expected Graduation',
+              },
+              {
                 value: cgpa,
-                label: 'CGPA',
+                label: 'Current CGPA',
               },
               {
                 value: String(projects.length),
@@ -125,11 +129,17 @@ export default function ResumeSection({
                 key={stat.label}
                 className="bg-ink-2 px-2 py-4"
               >
-                <dd className="font-display text-3xl leading-none text-bone">
+                <dd
+                  className={`font-display leading-none ${
+                    stat.label === 'Current CGPA'
+                      ? 'text-3xl text-crimson-2'
+                      : 'text-2xl text-bone sm:text-3xl'
+                  }`}
+                >
                   {stat.value}
                 </dd>
 
-                <dt className="mt-1 text-[9px] font-bold uppercase tracking-[0.12em] text-smoke sm:text-[10px] sm:tracking-[0.2em]">
+                <dt className="mt-2 text-[9px] font-bold uppercase tracking-[0.12em] text-smoke sm:text-[10px] sm:tracking-[0.15em]">
                   {stat.label}
                 </dt>
               </div>

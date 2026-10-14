@@ -124,6 +124,12 @@ export default function Hero({
       pos: 'right-[4%] bottom-[24%]',
       depth: 0.6,
     },
+    {
+      text: `CGPA: ${education[0]?.score ?? '8.29'}`,
+      sub: 'Academic Performance',
+      pos: 'left-[2%] bottom-[20%]',
+      depth: 0.8,
+    },
   ];
 
   return (

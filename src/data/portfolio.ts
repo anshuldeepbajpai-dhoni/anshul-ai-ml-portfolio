@@ -32,7 +32,7 @@ export const education = [
     place: 'Lucknow, Uttar Pradesh',
     degree: 'Bachelor of Technology — Artificial Intelligence & Machine Learning',
     period: 'July 2023 – June 2027',
-    score: 'Expected graduation: 2027',
+    score: '8.29 CGPA(till 6th semester)',
   },
 ];
 
