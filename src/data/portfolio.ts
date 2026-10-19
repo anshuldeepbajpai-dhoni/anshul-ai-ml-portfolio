@@ -756,9 +756,14 @@ export const introSlides: IntroSlide[] = [
     lines: ['AI Intern · Decode Labs', 'Data Analyst Intern · Bluestock Fintech', 'Python with ML Intern · Ei Systems'],
   },
   {
-    kicker: 'Projects',
-    title: 'Built to Solve Problems',
-    lines: ['NeuroTwin AI — RAG, long-term memory, and multi-agent capabilities', 'Mutual Fund Analytics — 46K+ NAV records and 32.8K transactions', 'AI Mood Analytics — real-time face and emotion analysis'],
+  kicker: 'Projects',
+  title: 'Built to Solve Problems',
+  lines: [
+    'NeuroTwin AI — RAG, long-term memory, and multi-agent capabilities',
+    'Mutual Fund Analytics — 46K+ NAV records and 32.8K transactions',
+    'AI Mood Analytics — real-time face and emotion analysis',
+    'AI Resume ATS — NLP-based resume screening and job matching',
+    'Hybrid AI Research Agent — web search, SLM verification, and LLM reasoning',],
   },
   {
     kicker: 'Achievement',
